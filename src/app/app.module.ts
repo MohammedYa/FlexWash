@@ -16,6 +16,7 @@ import { ReqestServiesComponent } from './component/reqest-servies/reqest-servie
 import { ReactiveFormsModule } from '@angular/forms';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeOurWorkComponent } from './component/home-our-work/home-our-work.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PartenershipComponent,
     PartenerItemComponent,
     ServiceDetailsComponent,
-    ReqestServiesComponent
+    ReqestServiesComponent,
+    HomeOurWorkComponent
   ],
   imports: [
     BrowserModule,
