@@ -1,0 +1,102 @@
+/* section{
+   background-image: url("../../../assets/images/6\ 3.png");
+   background-position: center center;
+   background-size: cover;
+   height: 100vh;
+} */
+.container{
+    background-color: rgba(67, 153, 200, 0.2);
+    border-radius: 30px;
+    padding: 20px;
+   
+}
+h3{
+    color: rgba(67, 153, 200, 1);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+}
+::placeholder{
+    color: rgba(67, 153, 200, 1);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+h5{
+    color: rgba(67, 153, 200, 1);
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    
+}
+.col-md-3{
+    text-align: center;
+}
+.col-md-3 img{
+    border-radius: 50%;
+    padding: 11px;
+    border: 3px solid rgba(255, 255, 255, 1)
+}
+.col-md-3 img:hover{
+    background-color: rgba(67, 153, 200, 1);
+    border: 3px solid rgba(67, 153, 200, 1)
+
+}
+.col-md-3 p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+.col-md-3:hover p{
+    color: rgba(67, 153, 200, 1);
+}
+.card{
+    border: 1px solid rgba(67, 153, 200, 1);
+    border-radius: 23px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 15px;
+}
+h6{
+    color: rgba(67, 153, 200, 1);
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+} ul li{
+    color: rgba(56, 78, 91, 1);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.78px;
+}
+ a{
+    text-align: center;
+    color:rgba(67, 153, 200, 1);
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+ span{
+    color: rgba(56, 78, 91, 1);
+}
+.prices .row{
+    row-gap: 8rem;
+    column-gap: 2rem;
+}
+button{
+    background-color: rgba(67, 153, 200, 1);
+    box-shadow: 2px 2px 25px 0px rgba(255, 255, 255, 0.1) inset;
+    border-radius: 19px;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: rgba(67, 153, 200, 1);
+    box-shadow: 2px 2px 25px 0px rgba(255, 255, 255, 0.1) inset;
+    border-radius: 19px;
+    color: rgba(255, 255, 255, 1);
+}
