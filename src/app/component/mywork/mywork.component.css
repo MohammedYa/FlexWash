@@ -32,17 +32,20 @@ html {
 .my-slider-card img {
     border-radius: 3px;
 }
-@media screen and (max-width:750px) and (max-width:1030px){
+@media screen and (min-width:750px) and (max-width:1048px){
     .my-slider-card{
         margin: auto !important;
-        width: 85%;
+        width: 80% !important;
         height: 70%;
+    }
+    .my-slider-card img {
+        width: 100%;
     }
 }
 @media screen and (max-width:700px){
     .my-slider-card{
         margin: auto !important;
-        width: 85%;
+        width: 80%;
         height: 80%;
     }
     .svg img{
