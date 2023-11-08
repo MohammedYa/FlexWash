@@ -26,9 +26,28 @@ body{
 }
 .my-works-slider .owl-next i, .my-works-slider .owl-prev i{
     font-size: 1.5rem !important;
-
+}
+.my-works-slider .owl-item.active.center .my-slider-card {
+    transform: scale(1.1) !important;
+    opacity: 1 !important;
+}
+@media screen and (max-width:820px){
+    .my-works-slider .owl-next{
+        right: -16px;
+        background-color: #ffffffab !important;
+    }
+    .my-works-slider .owl-prev{
         left: 12px;
         background-color: #ffffffab !important;
+    }
+}
+@media screen and (min-width:821px) and (max-width:910px){
+    .my-works-slider .owl-next{
+        right: -35px;
+    }
+    .my-works-slider .owl-prev{
+        left: -17px;
+    }
 }
 
 body::-webkit-scrollbar {
