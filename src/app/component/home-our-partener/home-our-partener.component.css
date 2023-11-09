@@ -1,5 +1,5 @@
 section{
-    height: 620px;
+    height: 480px;
     position: relative;
     text-align: center;
 }
@@ -12,26 +12,11 @@ letter-spacing: 0em;
 text-align: center;
 color: rgba(67, 153, 200, 1);
 padding-top: 2rem;
+
 }
-.img1,.img2{
-    position: absolute;
-}
-.img1{
-bottom: 0;
-left: 0;
-}
-.img2{
-top: 0%;
-right: 0;
-}
-.partenerImg{
-    width: 132.95px;
-    height: 132.95px;
-    border-radius: 30px;
-    background-color: #fff;
-    transform: rotate(45deg);
-    margin: 50px auto;
-    
+
+.my-slider{
+    padding-top: 200px;
 }
 .contact{
     margin: auto;
@@ -45,18 +30,24 @@ font-weight: 500;
 line-height: 30px;
 letter-spacing: 0em;
 color: rgba(56, 78, 91, 1);
-margin: 20px auto;
+margin: 55px auto;
+opacity: 0;
 }
 p{
-text-align: center;
-/* width: 60%; */
-font-family: Poppins;
-font-size: 14px;
-font-weight: 500;
-line-height: 21px;
-letter-spacing: 0em;
-text-align: center;
-color: rgba(56, 78, 91, 1);
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(56, 78, 91, 1);
+    opacity: 0;
+    height: 130px;
+    width: 500px;
+    margin-left: -110px;
 }
 a{
 text-align: center;
@@ -68,4 +59,52 @@ line-height: 30px;
 letter-spacing: 0em;
 color: rgba(67, 153, 200, 1);
 
+}
+/* owl */
+html {
+    scroll-behavior: smooth;
+}
+
+.partenerImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    transform: rotate(45deg);
+    margin: 50px auto;
+    transition: all 0.3s;
+    
+}
+
+
+@media screen and (min-width:750px) and (max-width:1048px){
+    .my-slider-card{
+        margin: 45px auto !important;
+        width: 80% !important;
+        height: 70%;
+    }
+    .my-slider-card img {
+        width: 100%;
+    }
+}
+@media screen and (max-width:749px){
+    .my-slider-card{
+        margin:50px auto !important;
+        width: 80%;
+        height: 80%;
+    }
+
+
+}
+
+
+@media screen and (min-width:360px)and (max-width:500px) {
+        .partenerImg{
+            width: 150px;
+            height: 150px;
+            border-radius: 30px;
+            transform: rotate(45deg);
+            margin: 50px auto;
+            
+            
+        }
 }
