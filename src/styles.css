@@ -55,13 +55,9 @@ body{
     width: 91%;
     margin: 10px auto;
 }
-.owl-carousel .owl-item img {
-    display: block;
-    width: fit-content;
-}
+
 .my-parteners-slider .owl-next, .my-parteners-slider .owl-prev{
     background-color: transparent !important;
-    /* background-color: aqua !important; */
     color: #01909A !important;
     position: absolute;
     top: 65%;
