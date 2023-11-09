@@ -20,6 +20,7 @@ import { HomeOurWorkComponent } from './component/home-our-work/home-our-work.co
 import { HomeAboutComponent } from './component/home-about/home-about.component';
 import { HomeOurPartenerComponent } from './component/home-our-partener/home-our-partener.component';
 import { HomeOurWellcomeComponent } from './component/home-our-wellcome/home-our-wellcome.component';
+import { HomeServiceComponent } from './component/home-service/home-service.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { HomeOurWellcomeComponent } from './component/home-our-wellcome/home-our
     HomeOurWorkComponent,
     HomeAboutComponent,
     HomeOurPartenerComponent,
-    HomeOurWellcomeComponent
+    HomeOurWellcomeComponent,
+    HomeServiceComponent
   ],
   imports: [
     BrowserModule,

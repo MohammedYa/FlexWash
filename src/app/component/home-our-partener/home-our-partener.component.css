@@ -1,5 +1,5 @@
 section{
-    height: 480px;
+    /* height: 480px; */
     position: relative;
     text-align: center;
 }
@@ -12,6 +12,7 @@ letter-spacing: 0em;
 text-align: center;
 color: rgba(67, 153, 200, 1);
 padding-top: 2rem;
+margin-bottom: 20px;
 
 }
 
