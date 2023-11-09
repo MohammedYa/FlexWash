@@ -18,6 +18,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeOurWorkComponent } from './component/home-our-work/home-our-work.component';
 import { HomeAboutComponent } from './component/home-about/home-about.component';
+import { HomeOurPartenerComponent } from './component/home-our-partener/home-our-partener.component';
+import { HomeOurWellcomeComponent } from './component/home-our-wellcome/home-our-wellcome.component';
+
 
 @NgModule({
   declarations: [
@@ -34,6 +37,8 @@ import { HomeAboutComponent } from './component/home-about/home-about.component'
     ReqestServiesComponent,
     HomeOurWorkComponent,
     HomeAboutComponent
+    HomeOurPartenerComponent,
+    HomeOurWellcomeComponent
   ],
   imports: [
     BrowserModule,
