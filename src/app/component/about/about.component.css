@@ -1,3 +1,6 @@
+.myAbout{
+    min-height: fit-content;
+}
 svg{
 margin-top: -3px; 
 position: relative;
@@ -23,6 +26,11 @@ align-items: center;
 width: 40%;
 padding: 40px;
 text-align: center;
+}
+.info p{
+    text-align: justify;
+    padding: 5px;
+    margin-top: 20px;
 }
 .btn{
 margin-top: 20px; 
@@ -63,15 +71,16 @@ height: 387px;
 transform: translate(10%,14%);
 }
 .vision{
-width: 45%;
-height: 600px; 
+/* width: 45%; */
+/* height: 600px;  */
 font-family: Poppins;
 font-size: 12px;
 font-weight: 500;
 line-height: 20px;
 letter-spacing: 1px;
 text-align: left;
-transform: translate(0%,25%);
+/* transform: translate(0%,25%); */
+/* margin-top: 11%; */
 
 }
 video{
@@ -89,7 +98,7 @@ color: #4399C8;
 }
 .choose-us{
 margin-top: 100px;
-height: 110vh;
+/* height: 110vh; */
 background-image: url('/assets/3 5.png');
 background-repeat: no-repeat;
 background-size: cover;

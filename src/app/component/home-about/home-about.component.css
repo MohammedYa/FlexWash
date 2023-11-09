@@ -5,7 +5,7 @@ svg{
     }
     .svg h2{
     position: absolute;
-    top: 697px;
+    top: 709px;
     left: 45%;
     font-family: Poppins;
     font-size: 40px;
@@ -13,22 +13,17 @@ svg{
     font-weight: 600;
     line-height: 54px;
     letter-spacing: 1px;
-    /* color: #fff; */
-    color: red;
+    color: #fff;
+    /* color: red; */
     }
-    /* .about-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    } */
-    .info{
-    /* width: 40%; */
+
+.info{
     padding: 40px;
     text-align: justify;
     position: relative;
     top: -42%;
     }
-    .info p{
+.info p{
         font-family: Poppins;
         font-size: 16px;
         font-weight: 500;
@@ -37,7 +32,7 @@ svg{
         text-align: left;
 
     }
-    .btn{
+.btn{
     margin-top: 20px; 
     width: 409px;
     min-width: fit-content;
@@ -66,3 +61,153 @@ svg{
     .mask-group2{
     transform: translate(46%,-45%);
     }
+
+    @media screen and (min-width:992px) and (max-width:1200px) {
+        .info{
+            padding: 30px;
+            top: -30%;
+            margin-left: 9%;
+            }
+            .group img{
+                width: 270px;
+            }
+            .mask-group{
+                top: 12px;
+                left: 1%;
+            }
+            .mask-group2{
+                transform: translate(46%,-37%);
+            }
+            .svg h2{
+                top: 692px;
+                left: 50%;
+            }
+            .info p{
+                text-align: justify;
+            }
+    }
+    
+    @media screen and (min-width:768px)and (max-width:992px) {
+        .mask-group{
+            top: -17px;
+            left: 12%;
+        }
+        .mask-group2{
+            transform: translate(87%,-42%);
+        }
+        .svg h2{
+            top: 100%;
+        }
+        .info{
+            top: -2%;
+            }
+        .svg img{
+            width: 94%;
+        }
+        .info p{
+            text-align: justify;
+        }
+    
+    }
+    @media screen and (min-width:500px)and (max-width:768px) {
+        .mask-group{
+            top: 23px;
+            left: 6%;
+        }
+        .mask-group2{
+            transform: translate(70%,-28%);
+        }
+        .svg h2{
+            
+            top: 105%;
+            left: 40%;
+            font-size: 34px;
+        }
+        .info{
+            padding: 20px;
+            top: 10%;
+            }
+        .svg img{
+            width: 94%;
+
+        }
+        .group img{
+            width: 255px;
+        }
+        .info p{
+            text-align: justify;
+        }
+    }
+    @media screen and (min-width:360px)and (max-width:500px) {
+        .svg img{
+            width: 94%;
+        }
+        .group img{
+            width: 180px;
+        }
+        .mask-group2{
+            transform: translate(55%,-18%);
+        }
+        .svg h2{
+            
+            top: 103%;
+            left: 35%;
+            font-size: 21px;
+        }
+        .mask-group{
+            top: 46px;
+            left: 4%;
+        }
+        .info{
+            padding: 12px;
+            top: 11%;
+            font-size: 15px;
+        }
+        .info p{
+            text-align: justify;
+        }
+        .btn{
+            margin-top: 2px; 
+            width: 100%;
+            font-weight: 600;
+            }
+
+    }
+    @media screen and (min-width:200px)and (max-width:360px) {
+        .svg img{
+            width: 94%;
+        }
+        .group img{
+            width: 180px;
+        }
+        .mask-group2{
+            transform: translate(28%,-24%);
+        }
+        .svg h2{
+            
+            top: 104%;
+            left: 34%;
+            font-size: 20px;
+        }
+        .mask-group{
+            top: 49px;
+            left: 0%;
+        }
+        .info{
+            padding: 1px;
+            top: 11%;
+            font-size: 14px;
+            
+        }
+        .info p{
+            text-align: justify;
+        }
+        .btn{
+            margin-top: 2px; 
+            margin-bottom: 30px;
+            width: 100%;
+            font-weight: 500;
+            }
+
+    }
+
