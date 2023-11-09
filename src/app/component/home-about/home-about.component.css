@@ -1,0 +1,68 @@
+svg{
+    margin-top: -3px; 
+    position: relative;
+    width: fit-content;
+    }
+    .svg h2{
+    position: absolute;
+    top: 697px;
+    left: 45%;
+    font-family: Poppins;
+    font-size: 40px;
+    z-index: 997;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 1px;
+    /* color: #fff; */
+    color: red;
+    }
+    /* .about-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    } */
+    .info{
+    /* width: 40%; */
+    padding: 40px;
+    text-align: justify;
+    position: relative;
+    top: -42%;
+    }
+    .info p{
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+    .btn{
+    margin-top: 20px; 
+    width: 409px;
+    min-width: fit-content;
+    height: 50px;
+    top: 467px;
+    left: 92px;
+    border-radius: 19px;
+    background: rgba(67, 153, 200, 1);
+    box-shadow: 2px 2px 25px 0px rgba(255, 255, 255, 0.1) inset;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    }
+    .group{
+    position: relative;
+    }
+    .group img{
+    width: 300px;
+    }
+    .mask-group{
+    z-index: 99;
+    position: absolute;
+    top: 0px;
+    left: -4%;
+    }
+    .mask-group2{
+    transform: translate(46%,-45%);
+    }

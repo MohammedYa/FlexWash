@@ -17,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeOurWorkComponent } from './component/home-our-work/home-our-work.component';
+import { HomeAboutComponent } from './component/home-about/home-about.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HomeOurWorkComponent } from './component/home-our-work/home-our-work.co
     PartenerItemComponent,
     ServiceDetailsComponent,
     ReqestServiesComponent,
-    HomeOurWorkComponent
+    HomeOurWorkComponent,
+    HomeAboutComponent
   ],
   imports: [
     BrowserModule,
