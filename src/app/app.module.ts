@@ -36,7 +36,7 @@ import { HomeOurWellcomeComponent } from './component/home-our-wellcome/home-our
     ServiceDetailsComponent,
     ReqestServiesComponent,
     HomeOurWorkComponent,
-    HomeAboutComponent
+    HomeAboutComponent,
     HomeOurPartenerComponent,
     HomeOurWellcomeComponent
   ],
