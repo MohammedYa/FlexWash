@@ -15,6 +15,11 @@ padding-top: 2rem;
 
 }
 
+.my-slider-card img{
+    display: block !important;
+    width: fit-content !important;
+}
+
 .my-slider{
     padding-top: 200px;
 }
