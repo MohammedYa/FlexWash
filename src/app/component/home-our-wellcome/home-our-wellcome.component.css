@@ -22,12 +22,26 @@
     line-height: 39px;
     color: #FFFFFF;
 }
+.slider h1{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 3rem ;
+    /* line-height: 39px; */
+    color: #FFFFFF;
+}
 .flex{
     font-family:'Open Sans';
     font-weight: 800;
     font-size: 36px    ;
     line-height: 49.03px;
     display: block;
+
+}
+.flex1{
+    font-family:'Open Sans';
+    /* font-weight: 800;
+    font-size: 36px    ;
+    line-height: 49.03px; */
 
 }
 .wash{
@@ -54,6 +68,13 @@ display: flex;
 justify-content: center;
 align-items: center;
 background-color: #FFFFFF;
+color: #4399C8;
+
+transition: all .5s ease-in-out;
+}
+.btn-call:hover{
+    background-color: #4399C8;
+    color: #FFFFFF;
 }
 .slider a{
     display: block;
@@ -61,7 +82,7 @@ background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #4399C8;
+    
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 30px ;

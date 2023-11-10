@@ -29,15 +29,17 @@ h2{
     color: rgba(255, 255, 255, 1);
 }
 .content h5{
-    font-size: 14px;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 16.94px;
     color: rgba(67, 153, 200, 1);
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 .content ul li{
-    font-size: 12px;
+    font-size: .9rem;
     font-weight: 500;
-    line-height: 14.52px;
+    line-height: 1.4;
     color: rgba(56, 78, 91, 1);
 }
 .content a{
