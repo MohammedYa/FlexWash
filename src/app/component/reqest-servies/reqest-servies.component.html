@@ -4,43 +4,43 @@
             <h3>Request Service</h3>
             <form [formGroup]="requestForm" (ngSubmit)="request(requestForm)">
                 <div class="d-flex gap-3">
-                    <input formControlName="first_name" type="text" placeholder="First Name" class="form-control my-2 w-50">
+                    <input formControlName="first_name" type="text" placeholder="First Name" class="form-control my-3 w-50">
                     <div *ngIf="requestForm.get('first_name')?.errors && requestForm.get('first_name')?.touched">
                         <p *ngIf="requestForm.get('first_name')?.getError('required')" class="text-danger">Fitsr Name is required</p>
                     </div>
-                    <input formControlName="last_name" type="text" placeholder="Last Name" class="form-control my-2 w-50">
+                    <input formControlName="last_name" type="text" placeholder="Last Name" class="form-control my-3 w-50">
                     <div *ngIf="requestForm.get('last_name')?.errors && requestForm.get('last_name')?.touched">
                         <p *ngIf="requestForm.get('last_name')?.getError('required')" class="text-danger">Last Name is required</p>
                     </div>
                 </div>
                 <div>
-                    <input formControlName="address" type="text" name="" id="" placeholder="Address" class="form-control my-2">
+                    <input formControlName="address" type="text" name="" id="" placeholder="Address" class="form-control my-3">
                     <div *ngIf="requestForm.get('address')?.errors && requestForm.get('address')?.touched">
                         <p *ngIf="requestForm.get('address')?.getError('required')" class="text-danger">Address is required</p>
                     </div>
                 </div>
                 <div class="d-flex gap-3">
-                    <input formControlName="city" type="text" name="" id="" placeholder="City"  class="form-control my-2">
+                    <input formControlName="city" type="text" name="" id="" placeholder="City"  class="form-control my-3">
                     <div *ngIf="requestForm.get('city')?.errors && requestForm.get('city')?.touched">
                         <p *ngIf="requestForm.get('city')?.getError('required')" class="text-danger">City Name is required</p>
                     </div>
-                    <input formControlName="postalcode" type="number" name="" id="" placeholder="Postal Code"  class="form-control my-2">
+                    <input formControlName="postalcode" type="number" name="" id="" placeholder="Postal Code"  class="form-control my-3">
                     <div *ngIf="requestForm.get('postalcode')?.errors && requestForm.get('postalcode')?.touched">
                         <p *ngIf="requestForm.get('postalcode')?.getError('required')" class="text-danger">Postal Code is required</p>
                     </div>
-                    <input formControlName="province" type="text" name="" id="" placeholder="Province"  class="form-control my-2">
+                    <input formControlName="province" type="text" name="" id="" placeholder="Province"  class="form-control my-3">
                     <div *ngIf="requestForm.get('province')?.errors && requestForm.get('province')?.touched">
                         <p *ngIf="requestForm.get('province')?.getError('required')" class="text-danger">Province is required</p>
                     </div>
                 </div>
                 <div>
-                    <input formControlName="contact_number" type="tel" name="" id="" placeholder="Contact Number" class="form-control my-2">
+                    <input formControlName="contact_number" type="tel" name="" id="" placeholder="Contact Number" class="form-control my-3">
                     <div *ngIf="requestForm.get('contact_number')?.errors && requestForm.get('contact_number')?.touched">
                         <p *ngIf="requestForm.get('contact_number')?.getError('required')" class="text-danger">Contact Number is required</p>
                     </div>
                 </div>
                 <div>
-                    <input formControlName="email" type="email" name="" id="" placeholder="Email" class="form-control my-2">
+                    <input formControlName="email" type="email" name="" id="" placeholder="Email" class="form-control my-3">
                     <div *ngIf="requestForm.get('email')?.errors && requestForm.get('email')?.touched">
                         <p *ngIf="requestForm.get('email')?.getError('required')" class="text-danger">Email is required</p>
                     </div>
@@ -49,19 +49,19 @@
                 <div class="types">
                     <div class="row">
                         <div class="col-md-3">
-                            <img src="../../../assets/images/semi truck 2.png" alt="">
+                            <img src="../../../assets/semi truck 2.png" alt="">
                             <p>Commercial vans- Sprinter Category</p>
                         </div>
                         <div class="col-md-3">
-                            <img src="../../../assets/images/semi truck 2.png" alt="">
+                            <img src="../../../assets/semi truck 2.png" alt="">
                             <p>5-Ton Truck Size</p>
                         </div>
                         <div class="col-md-3">
-                            <img src="../../../assets/images/semi truck 2.png" alt="">
+                            <img src="../../../assets/semi truck 2.png" alt="">
                             <p>Semi Truck Day Cab</p>
                         </div>
                         <div class="col-md-3">
-                            <img src="../../../assets/images/semi truck 2.png" alt="">
+                            <img src="../../../assets/semi truck 2.png" alt="">
                             <p>Semi Truck Sleeper</p>
                         </div>
                     </div>

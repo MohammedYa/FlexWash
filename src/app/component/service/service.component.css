@@ -1,0 +1,98 @@
+.svg{
+    position: relative;
+}
+h2{
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.col-md-6{
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    text-align: justify;
+    width: 410px;
+  
+    
+}
+.services{
+    background-color: rgba(67, 153, 200, 1);
+    
+}
+.services .content ul li,.services .content h5,.services .content a{
+    color: rgba(255, 255, 255, 1);
+}
+.content h5{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    color: rgba(67, 153, 200, 1);
+}
+.content ul li{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.52px;
+    color: rgba(56, 78, 91, 1);
+}
+.content a{
+    color: rgba(67, 153, 200, 1);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+}
+/* @media (max-width:576px){
+    .container{
+        width: 540px;
+        margin: auto;
+    }
+} */
+@media screen and (min-width: 992px){
+   .col-md-6{
+    width: 500px;
+   }
+}
+@media (min-width:1200px){
+	.container{
+		width: 1140px;
+	}
+
+}
+
+@media (min-width:1400px){
+	.container{
+		width: 1340px;
+	}
+
+
+}
+
+ 
+@media screen and (max-width:700px){
+   
+    .svg img{
+        width: 80%;
+    }
+    .svg h2{
+        top: 31%;
+        left: 6%;
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 54px;
+    }
+}
+@media screen and (max-width:500px){
+
+    .svg h2{
+        top: 25%;
+        left: 4%;
+        font-size: 27px;
+        font-weight: 500;
+        line-height: 50px;
+    }
+}
