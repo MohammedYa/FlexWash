@@ -23,14 +23,21 @@ justify-content: space-between;
 align-items: center;
 }
 .info{
-width: 40%;
+width: 50%;
 padding: 40px;
 text-align: center;
 }
 .info p{
+    color: #575757 !important;
+    font-size: 1.05rem;
     text-align: justify;
     padding: 5px;
     margin-top: 20px;
+    font-family: Poppins;
+    /* font-weight: 400; */
+    line-height: 1.3;
+
+    
 }
 .btn{
 margin-top: 20px; 
@@ -44,6 +51,12 @@ box-shadow: 2px 2px 25px 0px rgba(255, 255, 255, 0.1) inset;
 font-size: 30px;
 color: #fff;
 font-weight: 600;
+transition: all .5s ease-in-out;
+}
+.btn:hover{
+background: #fff;
+color: rgba(67, 153, 200, 1);
+box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .1);
 }
 .group{
 position: relative;
@@ -89,12 +102,18 @@ height: 100%;
 }
 .vision h4{
 font-family: Poppins;
-font-size: 16px;
+font-size: 1.4rem;
 font-weight: 500;
 line-height: 24px;
 letter-spacing: 0em;
 text-align: left;
 color: #4399C8;
+}
+
+.vision p{
+    font-size: 1rem;
+    color: #575757;
+    padding-left: 5px;
 }
 .choose-us{
 margin-top: 100px;
