@@ -21,7 +21,8 @@ import { HomeAboutComponent } from './component/home-about/home-about.component'
 import { HomeOurPartenerComponent } from './component/home-our-partener/home-our-partener.component';
 import { HomeOurWellcomeComponent } from './component/home-our-wellcome/home-our-wellcome.component';
 import { HomeServiceComponent } from './component/home-service/home-service.component';
-
+import {EmailserveService} from "../app/service/emailserve.service"
+import { HttpClientModule } from '@angular/common/http'; 
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { HomeServiceComponent } from './component/home-service/home-service.comp
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
     CarouselModule,
@@ -51,7 +53,7 @@ import { HomeServiceComponent } from './component/home-service/home-service.comp
     
 
   ],
-  providers: [],
+  providers: [EmailserveService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
