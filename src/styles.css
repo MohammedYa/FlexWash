@@ -1,8 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Bai+Jamjuree:wght@300;400;500;600;700&family=Dancing+Script:wght@600&family=Heebo:wght@100;200;300;400;500;600;700;800&family=IBM+Plex+Serif:wght@200;300;400;500&family=Inter:wght@200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Playfair+Display:wght@500&family=Poppins:wght@200;300;400;500;600;800&family=Raleway:ital@1&family=Roboto+Slab:wght@200;300;500;600;700&family=Roboto:wght@300;400;500&family=Work+Sans:ital,wght@1,500&display=swap');
+
 body{
     background-color: rgb(246,246,246);
     overflow-y: scroll !important;
+    font-family: 'Inter', sans-serif;
 }
 /* my work component */
 .my-works-slider{
