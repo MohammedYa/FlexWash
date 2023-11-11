@@ -2,8 +2,12 @@
     <div class="container">
         <div class="row">
             <h3>Request Service</h3>
-            <!-- <h3 style="word-spacing: 8px; line-height: 1.7;">Book Now</h3> -->
+
+            
             <form [formGroup]="requestForm" (ngSubmit)="request(requestForm)">
+
+            <form [formGroup]="requestForm" (ngSubmit)="submitForm()">
+
                 <div class="d-flex gap-3">
                     <input formControlName="first_name" type="text" placeholder="First Name" class="form-control my-3 w-50">
                     <div *ngIf="requestForm.get('first_name')?.errors && requestForm.get('first_name')?.touched">
@@ -73,47 +77,51 @@
                          <div class="card">
                             <h6 class="text-center">WASH & WAX</h6>
                             <ul>
-                                <li>Wheel Rim Cleaner and Shine</li>
-                                
-                                <li>Dirt-Free Rinse.</li>
                                 <li>Soap wash.</li>
+                                <li>Dirt-Free Rinse.</li>
                                 <li>Paint Protection. </li>
                                 <li>Bug Repellent.</li>
-                                <li>Tire scrub.</li>
+                                <li>Trio scrub.</li>
                                 <li>Bug Off. </li>
-                                
+                                <li>Wheel Rim Cleaner and Shine</li>
                                 
                             </ul>
-                            <div class="links d-flex gap-4">
+                            <div class="links d-flex gap-3">
                                 <a href="">BASIC <span> 45$</span></a>
                             <a href="">ULTIMATE <span>55$</span></a>
                             </div>
                          </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4">
+
+                 
                     <div class="card">
                         <h6 class="text-center">DETALING</h6>
                         <ul>
-                            <li>Floor Mats and Seat Detailing</li>
-                            <li>Shampooing carpet, Floor mats</li>
+                            <li>Vacuuming carpet, Floor mats, Seats.</li>
+                            <li>Shampooing carpet, Floor mats, Seats.</li>
                             <li>Detailing dashboard and Doors.  </li>
                             <li>Carpet salt and stain removal.</li>
                             <li>Cleaning windows inside/outside.</li>
                             <li>Cleaing A/C vent.</li>
-                            <li>fabric/leather Clean & Condition.</li>
+                            <li> Clean & Condition fabric/leather.</li>
                             
                         </ul>
-                        <div class="links d-flex gap-4">
+                        <div class="links d-flex gap-3">
                             <a href="">BASIC <span> 150$</span></a>
                         <a href="">ULTIMATE <span>200$</span></a>
                         </div>
                     </div>
                     
                         </div>
+
                         <div class="col-sm-12 col-md-5 col-lg-3">
+
+                        
+
                            <div class="card text-center">
                             <h6 class="text-center">COMBINE</h6>
-                            <div class="links d-flex gap-4">
+                            <div class="links d-flex gap-3">
                                 <a href="">BASIC <span> 45$</span></a>
                             <a href="">ULTIMATE <span>55$</span></a>
                             </div>
@@ -124,7 +132,7 @@
                     </div>
                 </div>
                 <div class="butn text-center">
-                    <button type="submit" class="btn w-50 "> send</button>
+                    <button type="submit" class="btn w-50 " > send</button>
 
                 </div>
             </form>
