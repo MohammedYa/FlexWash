@@ -108,7 +108,8 @@ button:hover{
     color: rgba(255, 255, 255, 1);
 }
 .links{
-    width: 50%;
+    justify-content: center;
+    width: 100%;
     margin: auto;
 }
 @media screen and (min-width: 600px){
