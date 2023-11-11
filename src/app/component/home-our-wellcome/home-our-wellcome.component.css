@@ -21,12 +21,12 @@
     font-size: 26px ;
     line-height: 39px;
     color: #FFFFFF;
-}
+}*/
 .slider h1{
     font-family: 'Poppins';
     font-weight: 500;
     font-size: 3rem ;
-    /* line-height: 39px; */
+    line-height: 1.5; 
     color: #FFFFFF;
 }
 .flex{
@@ -35,6 +35,7 @@
     font-size: 36px    ;
     line-height: 49.03px;
     display: block;
+
 
 }
 .flex1{
@@ -130,7 +131,7 @@ video {
 .content {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-79%, -80%);
     color: white;
     text-align: center;
@@ -147,12 +148,12 @@ span{
     font-weight: 800;
     font-size: 36px    ;
     line-height: 49.03px;
-   
+
 }
 p{
     font-weight: 500;
-    font-size: 16px ;
-    line-height: 24px; 
+    font-size: 1.1rem ;
+    line-height:1.4; 
     text-align:justify;   
     
 }
@@ -166,8 +167,8 @@ button{
 button:hover{
     box-shadow: 2px 2px 25px 0px rgba(255, 255, 255, 0.1) inset;
     width: 360px;
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(67, 153, 200, 1);
+    background-color:rgba(67, 153, 200, 1)  ;
+    color: rgba(255, 255, 255, 1);
     border-radius: 19px;
 }
 @media screen and (max-width: 600px){

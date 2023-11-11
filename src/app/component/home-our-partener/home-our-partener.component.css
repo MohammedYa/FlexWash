@@ -12,7 +12,7 @@ letter-spacing: 0em;
 text-align: center;
 color: rgba(67, 153, 200, 1);
 padding-top: 2rem;
-margin-bottom: 20px;
+margin-bottom: 80px;
 
 }
 
@@ -42,7 +42,7 @@ opacity: 0;
 p{
     margin: auto;
     text-align: center;
-    width: 60%;
+    /* width: 60%; */
     font-family: Poppins;
     font-size: 14px;
     font-weight: 500;
@@ -53,7 +53,7 @@ p{
     opacity: 0;
     height: 130px;
     width: 500px;
-    margin-left: -110px;
+    margin-left: -50px;
 }
 a{
 text-align: center;
@@ -72,11 +72,10 @@ html {
 }
 
 .partenerImg{
-    width: 150px;
-    height: 150px;
-    border-radius: 30px;
-    transform: rotate(45deg);
-    margin: 50px auto;
+    transform: scale(.9);
+    /* width: 100px; */
+    height: 70px;
+    margin: 30px auto;
     transition: all 0.3s;
     
 }
@@ -91,6 +90,10 @@ html {
     .my-slider-card img {
         width: 100%;
     }
+    p{
+        margin: auto;
+        text-align: center;
+    }
 }
 @media screen and (max-width:749px){
     .my-slider-card{
@@ -104,13 +107,13 @@ html {
 
 
 @media screen and (min-width:360px)and (max-width:500px) {
-        .partenerImg{
-            width: 150px;
-            height: 150px;
-            border-radius: 30px;
-            transform: rotate(45deg);
-            margin: 50px auto;
-            
-            
-        }
+    p{
+        font-size: 14px;
+        width: 270px;
+        margin: auto;
+        text-align: center;
+    }
+    h4{
+        font-size: 18px;
+    }
 }

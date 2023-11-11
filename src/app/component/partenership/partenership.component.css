@@ -20,7 +20,7 @@
   text-align: center;
   }
   .item{
-   width:29%;
+   width:27%;
   border-radius: 20px;
   overflow: hidden;
   background-color: #fff;
@@ -28,6 +28,9 @@
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
   display: inline-block;
   margin: 20px;
+  }
+  .item .myImg{
+    height: 300px;
   }
   .name{
       display: flex;
