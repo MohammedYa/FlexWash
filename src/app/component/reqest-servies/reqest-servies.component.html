@@ -1,7 +1,8 @@
 <section class="mt-5">
     <div class="container">
         <div class="row">
-            <h3>Request Service</h3>
+            <h3 class="mb-0">Request Service</h3>
+            <h5 class="text-center" style="font-size: 14px;">*All Fields are Requierd</h5>
 
             <form [formGroup]="requestForm" (ngSubmit)="submitForm()">
 
@@ -138,14 +139,14 @@
                 </div>
                 <div class="d-flex gap-3 my-5 selectParent">
                     
-                    <select #plan class="w-50 form-select"    (change)="onSelectedPlan(plan.value) " >
+                    <select #plan class="w-50 form-select"  (change)="onSelectedPlan(plan.value) " >
                         <option selected disabled>Select Your Plan</option>
                         <option >Wash & Wax</option>
                         <option >Detaling</option>
                         <option >Combine</option>
                     </select>
                     
-                    <select #planType class="w-50 form-select"   (change)="onSelectedType(planType.value)" >
+                    <select #planType class="w-50 form-select"    (change)="onSelectedType(planType.value)" >
                         <option selected disabled>Select Your Plan Type</option>
                         <option >Basic</option>
                         <option >Ultimate</option>
@@ -153,8 +154,7 @@
                     
                 </div>
                 <div class="butn text-center">
-                    <button type="submit" class="btn w-50 " > send</button>
-
+                    <button [disabled]="requestForm.invalid" type="submit" class="btn w-50 " >Send</button>
                 </div>
             </form>
           
