@@ -78,7 +78,7 @@
                 </div>
                 <div class="prices mt-5">
                     <div class="row ">
-                        <div class="col-sm-12 col-md-5 col-lg-4">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
                          <div class="card">
                             <h6 class="text-center">WASH & WAX</h6>
                             <ul>
@@ -120,19 +120,33 @@
                     
                         </div>
 
-                        <div class="col-sm-12 col-md-5 col-lg-3">
-
-                           <div class="card text-center">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card text-center">
                             <h6 class="text-center">COMBINE</h6>
                             <div class="links d-flex gap-3" *ngIf="xxx">
                                 <a href="">BASIC <span>{{xxx}}</span></a>
                             <a href="">ULTIMATE <span>{{yyy}}</span></a>
                             </div>
-                           
-                           </div>
-                          
+                            </div>
                         </div>
+
                     </div>
+                </div>
+                <div class="d-flex gap-3 my-5 selectParent">
+                    
+                    <select #plan class="w-50 form-select"    (change)="onSelectedPlan(plan.value) " >
+                        <option selected disabled>Select Your Plan</option>
+                        <option >Wash & Wax</option>
+                        <option >Detaling</option>
+                        <option >Combine</option>
+                    </select>
+                    
+                    <select #planType class="w-50 form-select"   (change)="onSelectedType(planType.value)" >
+                        <option selected disabled>Select Your Plan Type</option>
+                        <option >Basic</option>
+                        <option >Ultimate</option>
+                    </select>
+                    
                 </div>
                 <div class="butn text-center">
                     <button type="submit" class="btn w-50 " > send</button>
