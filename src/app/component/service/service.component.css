@@ -29,9 +29,9 @@ h2{
     color: rgba(255, 255, 255, 1);
 }
 .content h5{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
-    line-height: 16.94px;
+    line-height: 1.6;
     color: rgba(67, 153, 200, 1);
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -41,6 +41,7 @@ h2{
     font-weight: 500;
     line-height: 1.4;
     color: rgba(56, 78, 91, 1);
+    text-align: left;
 }
 .content a{
     color: rgba(67, 153, 200, 1);
@@ -58,6 +59,12 @@ h2{
    .col-md-6{
     width: 500px;
    }
+}
+@media (min-width:1200px){
+	.container{
+		width: 1140px;
+	}
+
 }
 @media (min-width:1200px){
 	.container{
