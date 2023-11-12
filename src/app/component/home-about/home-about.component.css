@@ -5,7 +5,7 @@ svg{
     }
     .svg h2{
     position: absolute;
-    top: 811px;
+    top: 870px;
     left: 33%;
     font-family: Poppins;
     font-size: 40px;
@@ -84,7 +84,7 @@ svg{
                 transform: translate(46%,-37%);
             }
             .svg h2{
-                top: 852px;
+                top: 932px;
                 left: 40%;
             }
             .info p{
@@ -101,7 +101,7 @@ svg{
             transform: translate(87%,-42%);
         }
         .svg h2{
-            top: 100%;
+            top: 116%;
         }
         .info{
             top: -2%;
@@ -124,7 +124,7 @@ svg{
         }
         .svg h2{
             
-            top: 102%;
+            top: 114%;
             left: 40%;
             font-size: 34px;
         }
@@ -155,7 +155,7 @@ svg{
         }
         .svg h2{
             
-            top: 103%;
+            top: 113%;
             left: 35%;
             font-size: 21px;
         }
@@ -178,7 +178,7 @@ svg{
             }
 
     }
-    @media screen and (min-width:200px)and (max-width:360px) {
+    /* @media screen and (min-width:200px)and (max-width:360px) {
         .svg img{
             width: 94%;
         }
@@ -214,5 +214,5 @@ svg{
             font-weight: 500;
             }
 
-    }
+    } */
 

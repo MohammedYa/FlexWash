@@ -5,76 +5,24 @@
     </div>
     <div class="container">
         <div class="row gap-3 d-flex justify-content-center ">
-            <div class="col-xs-12 col-md-6 d-flex align-items-center" >
+            <div class="col-xs-12 col-md-6 d-flex align-items-center"  *ngFor="let service of services;let i=index "
+            [ngClass]="{'services':i==2}">
                 <div class="content">
-                    <h5>Detailing</h5>
+                    <h5>{{service.name}}</h5>
                     <ul>
-                        <li>Floor Mats & Seat Detailing</li>
-                        <li>Shampooing for Carpet, Floor, Mats, and Seats</li>
-                        <li>Dashboard & Doors Detailing</li>
-                        <li>Carper Salt & Stain Removal</li>
-                        <li>Window Cleaning Inside and Outside</li>
-                        <li>A/C Vent Cleaning</li>
-                        <li>Fabric/Leather Clean & Condition</li>
+                        <li *ngFor="let part of service.info ">
+                        {{part}}
+                        </li>
+                        
                     </ul>
                     
-                    <!-- <a href=""class='text-decoration-none'>See More ...</a> -->
+                    <a [routerLink]="['/serviceItem',service.id]" class='text-decoration-none'>See More ...</a>
                 </div>
                 <div class="img">
-                    <img class="w-100" src="../../../assets/services.png" alt="">
+                    <!-- <img class="w-100" [src]="service.logo" alt=""> -->
                 </div>
             </div>
-            <div class="col-xs-12 col-md-6 d-flex align-items-center ">
-                <div class="content">
-                    <h5>Wash & Wax</h5>
-                    <ul>
-                        <li>Wheel Rim Cleaner & Shine </li>
-                        <li>Dirt-Free Rinse</li>
-                        <li>Paint Protection</li>
-                        <li>Soap Wash  </li>
-                        <li>Bug Repellent</li>
-                        <li> Tire Scrub</li>
-                        <li>Bug Off</li>
-                    </ul>
-                    <!-- <a href=""class='text-decoration-none'>See More ...</a> -->
-                </div>
-                <div class="img">
-                    <img class="w-100" src="../../../assets/services4.png" alt="">
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6 d-flex  align-items-center services">
-                <div class="content">
-                    <h5>On-Demand Services</h5>
-                    <ul>
-                        <li>Plazas & Garages</li>
-                        <li>Warehouses & Yards </li>
-                        <li>Boats & Ports</li>
-                        <li>Parking Garages</li>
-                        <li> Sidewalks</li>
-                    </ul>
-                    <!-- <a href=""class='text-decoration-none'>See More ...</a> -->
-                </div>
-                <div class="img">
-                    <img class="w-100" src="../../../assets/services3.png" alt="">
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6 d-flex  align-items-center">
-                <div class="content">
-                    <h5>Extra Services</h5>
-                    <ul>
-                        <li>Pet Hair Removal </li>
-                        <li>Engine Shampoo &Dressing</li>
-                        <li>Roof Cleaning</li>
-                        <li>Aluminum Shine</li>
-                        <li>Glass Polish</li>
-                        <li>Electric Air Freshening</li>
-                    </ul>
-                    <!-- <a href=""class='text-decoration-none'>See More ...</a> -->
-                </div>
-                <div class="img">
-                    <img class="w-100" src="../../../assets/services.png" alt="">
-                </div>
-            </div>
+        
         </div>
     </div>
 </section>

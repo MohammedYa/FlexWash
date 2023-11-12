@@ -18,7 +18,7 @@ const routes: Routes = [
   {path:"partenerShips",component:PartenershipComponent},
   {path:"MyWork",component:MyworkComponent},
   {path:"partenerItem/:id",component:PartenerItemComponent},
-  {path:"serviceItem",component:ServiceDetailsComponent},
+  {path:"serviceItem/:id",component:ServiceDetailsComponent},
   {path:"**",component:HomeComponent},
 ];
 

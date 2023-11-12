@@ -166,23 +166,41 @@ section{
     bottom: 10%;
     right: 0;
 }
-@media screen and (max-width: 600px){
-  .content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+@media screen and (min-width:992px) and (max-width:1200px) {
+
 }
-@media screen and (min-width: 300px)and (max-width: 500px){
+@media screen and (min-width:768px)and (max-width:992px) {
+    .lettleInfo {
+      
+        width: 100%;
+       
+    }
+
+}
+@media screen and (min-width:500px)and (max-width:768px) {
+.content{
+    left:67% ;
+}
+.svg{
+    width: 100%;
+}
+.lettleInfo{
+    width: 100%;
+}
+}
+@media screen and (min-width:360px)and (max-width:500px) {
     .content{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 230px;
+        left:83% ;
     }
-    button{
-        width: 200px;
+    .mobile{
+        font-size: 28px;
     }
-  }
+    .svg{
+        width: 100%;
+    }
+    .lettleInfo{
+
+        font-size: 13px;
+        width: 90%;
+    }
+}
