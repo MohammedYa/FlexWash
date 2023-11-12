@@ -1,22 +1,19 @@
-.myAbout{
+/* .myAbout{
     min-height: fit-content;
-}
-svg{
-margin-top: -3px; 
-position: relative;
-width: fit-content;
+} */
+.svg{
+    position: relative;
 }
 .svg h2{
-position: absolute;
-top: 19%;
-left: 7%;
-font-family: Poppins;
-font-size: 50px;
-font-weight: 600;
-line-height: 54px;
-letter-spacing: 1px;
-color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    color: rgba(255, 255, 255, 1);
 }
+
 .about-content{
 display: flex;
 justify-content: space-between;
@@ -116,7 +113,7 @@ color: #4399C8;
     padding-left: 5px;
 }
 .choose-us{
-margin-top: 100px;
+/* margin-top: 100px; */
 /* height: 110vh; */
 background-image: url('/assets/3 5.png');
 background-repeat: no-repeat;
@@ -137,7 +134,28 @@ margin-left: 20px;
 padding-top: 150px;
 padding-bottom: 150px;
 }
+.col-md-4 h3, .col-md-6 h3{
+    color: #4399C8;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 54px;
+}
+.col-md-4 p, .col-md-6 p{
+    color: #575757;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.col-md-6 span{
+    color: #575757;
+    font-size: 18px;
+    line-height: 24px;
+
+}
 @media screen and (min-width:992px) and (max-width:1200px) {
+    /* .svg h2{
+        top: 16%;
+    } */
 .mask-group {
 
 left: -145px;
@@ -198,10 +216,10 @@ overflow: hidden;
 .about-content{
 display: block;
 }
-.svg h2{
-top: 17%;
+/* .svg h2{
+top: 13%;
 
-}
+} */
 .info{
 width: 75%;
 margin: auto;
@@ -251,11 +269,6 @@ width: 270px;
 .about-content{
 display: block;
 }
-.svg h2{
-top: 13.5%;
-left: 2%;
-font-size: 38px;
-}
 .info{
 width: 95%;
 margin: auto;
@@ -299,6 +312,41 @@ text-align: center;
 padding-bottom: 0px;
 overflow: hidden;
 }
+.choose-us{
+    background-image: none;
+}
 
+}
+@media screen and (max-width:600px) {
+    .choose-us{
+        background-image: none;
+    }
+    
+}
 
+  @media screen and (max-width:700px){
+   
+    .svg img{
+        width: 80%;
+    }
+    .svg h2{
+        top: 31%;
+        left: 6%;
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 54px;
+    }
+    .choose-us{
+        background-image: none;
+    }
+}
+@media screen and (max-width:500px){
+
+    .svg h2{
+        top: 25%;
+        left: 4%;
+        font-size: 27px;
+        font-weight: 500;
+        line-height: 50px;
+    }
 }
