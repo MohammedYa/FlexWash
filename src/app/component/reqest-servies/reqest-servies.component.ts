@@ -85,36 +85,27 @@ changecontent(content:any) {
       email:['',Validators.required, Validators.email],
     })
   }
-  request(data:FormGroup):void{
-    console.log(data.value);
-    
 
-  }
- 
   submitForm() {
-    const form=JSON.stringify({
-      first_name:this.requestForm.get("first_name")?.value,
-      last_name:this.requestForm.get("last_name")?.value,
-      address:this.requestForm.get("address")?.value,
-      city:this.requestForm.get("city")?.value,
-      postalcode:this.requestForm.get("postalcode")?.value,
-      province:this.requestForm.get("province")?.value,
-      contact_number:this.requestForm.get("contact_number")?.value,
-      email:this.requestForm.get("email")?.value,
-      Choosen_plan:this.selectedPlan,
-      Plan_Type:this.selectedPlanType,
-      Truck_Type:this.chosenTruckType,
 
-    })
-    console.log(form);
     console.log('Form submitted with value:', this.selectedPlan);
     console.log('Form submitted with value:', this.selectedPlanType);
     //rahmamohammedhasan@gmail.com 
     // قم بجمع بيانات النموذج
     const formData =JSON.stringify({
       to: "emanamra1999@gmail.com",
-      subject: "newjob",
-      message:form,
+      subject: "New FLEX Wash Request",
+      message:"Name: "+this.requestForm.get("first_name")?.value+" "+this.requestForm.get("last_name")?.value
+              +"<br>"+"Email: "+this.requestForm.get("email")?.value+"<br>"+
+              "Contact_Number: "+this.requestForm.get("contact_number")?.value+"<br>"+
+              "Address: "+this.requestForm.get("address")?.value+"<br>"+
+              "city: "+this.requestForm.get("city")?.value+ "<br>"+
+              "Postalcode: "+this.requestForm.get("postalcode")?.value+"<br>"+
+              "Province: "+this.requestForm.get("province")?.value+"<br>"+
+              "Wahs_plan: "+this.selectedPlan+"<br>"+
+              "Plan_Type: "+this.selectedPlanType+"<br>"+
+              "Truck_Type: "+this.chosenTruckType+"<br>"
+
   }) /* جمع بيانات النموذج هنا */;
 
     // استخدم الخدمة لإرسال البيانات إلى الخادم

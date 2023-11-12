@@ -53,7 +53,8 @@ h5{
 }
 .col-md-3 img:hover{
     background-color: #4399c8;
-    border: 3px solid rgba(67, 153, 200, 1)
+    border: 3px solid rgba(67, 153, 200, 1);
+    cursor: pointer;
 
 }
 .col-md-3 p{
@@ -65,6 +66,7 @@ h5{
 }
 .col-md-3:hover p{
     color: rgba(67, 153, 200, 1);
+    
 }
 .card{
     border: 1px solid rgba(67, 153, 200, 1);
@@ -140,11 +142,15 @@ button:hover{
 }
 }
 @media screen and (max-width:500px) {
-    .form-select{
+    .form-select,
+    .fName,
+    .lName{
         width: 100% !important;
         margin-bottom: 28px;
     }
-    .selectParent{
+    .selectParent,
+    .nameParent,
+    .dataParent{
         display: block !important;
     }
 }
@@ -164,6 +170,11 @@ button:hover{
 }
 @media screen and (min-width:360px)and (max-width:500px) {
     .card{height: 425px;}
+    .links{margin: 15px auto;}
+    span{display: block;}
+}
+@media screen and (max-width:359px) {
+    .card{height: 444px;}
     .links{margin: 15px auto;}
     span{display: block;}
 }
