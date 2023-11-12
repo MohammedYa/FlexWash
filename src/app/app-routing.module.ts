@@ -7,6 +7,7 @@ import { PartenerItemComponent } from './component/partener-item/partener-item.c
 import { PartenershipComponent } from './component/partenership/partenership.component';
 import { ServiceDetailsComponent } from './component/service-details/service-details.component';
 import { MyworkComponent } from './component/mywork/mywork.component';
+
 // Import the HttpClientModule
 
 const routes: Routes = [
