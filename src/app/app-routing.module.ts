@@ -14,9 +14,9 @@ const routes: Routes = [
   {path:"Home",component:HomeComponent},
   {path:"About",component:AboutComponent},
   {path:"Services",component:ServiceComponent},
-  {path:"parterShips",component:PartenershipComponent},
+  {path:"partenerShips",component:PartenershipComponent},
   {path:"MyWork",component:MyworkComponent},
-  {path:"parterItem",component:PartenerItemComponent},
+  {path:"partenerItem/:id",component:PartenerItemComponent},
   {path:"serviceItem",component:ServiceDetailsComponent},
   {path:"**",component:HomeComponent},
 ];

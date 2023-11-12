@@ -1,14 +1,14 @@
 <section>
     <div class="svg">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4399C8" fill-opacity="1" d="M0,160L80,144C160,128,320,96,480,90.7C640,85,800,107,960,101.3C1120,96,1280,64,1360,48L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-        <h2>Drive Xpress</h2>    
+        <h2>{{company.name}}</h2>    
     </div>
     <div class="items grid-container ">
-        <div class="item item1">
-            <img class="w-100 " src="../../../assets/photos/image 13.png" alt="">
+        <div class="item item1" *ngFor="let photos of company.imgs">
+            <img class="w-100 " [src]="photos" alt="">
             
-        </div>
-        <div class="item item2 ">
+         </div>
+       <div class="item item2 ">
             <img class="w-100" src="../../../assets/photos/image 14.png" alt="">
             
         </div>

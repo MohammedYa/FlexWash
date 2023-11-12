@@ -6,14 +6,14 @@
         <h2>Partnerships</h2>
     </div>
     <div class="items ">
-        <div class="item ">
-            <img class="w-100 myImg " src="../../../assets/photos/image 10.png" alt="">
+        <div class="item " *ngFor="let company of companyShips">
+            <img class="w-100 myImg " [src]="company.src" alt="">
             <div class="name">
-                <h4>CompanyName</h4>
-                <a routerLink="/parterItem"> <img src="../../../assets/right-svgrepo-com 1.png" alt=""></a>
+                <h4>{{company.name}}</h4>
+                <a [routerLink]="['/partenerItem',company.id]" > <img src="../../../assets/right-svgrepo-com 1.png" alt=""></a>
             </div>
         </div>
-        <div class="item ">
+        <!-- <div class="item ">
             <img class="w-100 myImg" src="../../../assets/photos/image 11.png" alt="">
             <div class="name">
                 <h4>CompanyName</h4>
@@ -26,7 +26,7 @@
                 <h4>CompanyName</h4>
                <a routerLink="/parterItem"> <img src="../../../assets/right-svgrepo-com 1.png" alt=""></a>
             </div>
-        </div>
+        </div> -->
         
     </div>
     </section>
