@@ -18,10 +18,8 @@ export class ReqestServiesComponent implements OnInit {
   colored3:boolean = false;
   colored4:boolean = false;
 
-  //select box for plans
   selectedPlan = '';
   selectedPlanType = '';
-
 	onSelectedPlan(value:string): void {
 		this.selectedPlan = value;
 	}
@@ -29,6 +27,7 @@ export class ReqestServiesComponent implements OnInit {
 		this.selectedPlanType = value;
 	}
 
+  // note:string = '';
   
   x:any;
   xx:any;
@@ -108,6 +107,7 @@ changecontent(content:any) {
       province:['',Validators.required],
       contact_number:['',Validators.required],
       email:['',Validators.required, Validators.email],
+      note:[''],
     })
   }
 
@@ -130,7 +130,8 @@ changecontent(content:any) {
               "Province: "+this.requestForm.get("province")?.value+"<br>"+
               "Wahs_plan: "+this.selectedPlan+"<br>"+
               "Plan_Type: "+this.selectedPlanType+"<br>"+
-              "Truck_Type: "+this.chosenTruckType+"<br>"
+              "Truck_Type: "+this.chosenTruckType+"<br>"+
+              "Note: "+this.requestForm.get("note")?.value+"<br>"
 
   }) /* جمع بيانات النموذج هنا */;
 

@@ -161,6 +161,13 @@
                     </select>
                     
                 </div>
+
+                <div>
+                    <textarea formControlName="note"  placeholder="Note..." rows="3" 
+                    class="form-control" 
+                    style="height: 150px;" id="userNote" ></textarea>
+                    
+                </div>
                 <div class="butn text-center">
                     <button [disabled]="requestForm.invalid" type="submit" class="btn w-50 " >Send</button>
                 </div>
