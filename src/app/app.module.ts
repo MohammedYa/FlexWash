@@ -25,7 +25,7 @@ import { HomeOurWellcomeComponent } from './component/home-our-wellcome/home-our
 import { HomeServiceComponent } from './component/home-service/home-service.component';
 import {EmailserveService} from "../app/service/emailserve.service"
 import { HttpClientModule } from '@angular/common/http'; 
-
+import { ToastrModule } from 'ngx-toastr';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,8 +53,7 @@ import { HttpClientModule } from '@angular/common/http';
     CarouselModule,
     BrowserAnimationsModule,
     FormsModule,
-
-    
+    ToastrModule.forRoot()
 
   ],
   providers: [EmailserveService],

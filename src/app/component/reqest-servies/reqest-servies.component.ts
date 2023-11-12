@@ -1,13 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl,FormBuilder,FormGroup ,Validators} from '@angular/forms';
-import {EmailserveService} from "../../service/emailserve.service"
+import {EmailserveService} from "../../service/emailserve.service";
+import { ToastrService } from 'ngx-toastr';
+
 @Component({
   selector: 'app-reqest-servies',
   templateUrl: './reqest-servies.component.html',
   styleUrls: ['./reqest-servies.component.css']
 })
 export class ReqestServiesComponent implements OnInit {
-  constructor(private _FormBuilder:FormBuilder ,private _sb:EmailserveService){}
+  constructor(private _FormBuilder:FormBuilder ,private _sb:EmailserveService,private toastr: ToastrService){}
   ngOnInit():void{
     this.createForm()
   }
@@ -119,7 +121,7 @@ changecontent(content:any) {
     //rahmamohammedhasan@gmail.com 
     // قم بجمع بيانات النموذج
     const formData =JSON.stringify({
-      to: "emanamra1999@gmail.com",
+      to: "rahmamohammedhasan@gmail.com",
       subject: "New FLEX Wash Request",
       message:"Name: "+this.requestForm.get("first_name")?.value+" "+this.requestForm.get("last_name")?.value
               +"<br>"+"Email: "+this.requestForm.get("email")?.value+"<br>"+
@@ -137,8 +139,8 @@ changecontent(content:any) {
 
     // استخدم الخدمة لإرسال البيانات إلى الخادم
     this._sb.sendFormData(formData).subscribe(
-      (res)=>{console.log(res);
-      }
+      (res)=>{ this.toastr.info('The data has been successfully sent.', 'Thank you.');
+    this.requestForm.reset()}
     )
   }
 }
