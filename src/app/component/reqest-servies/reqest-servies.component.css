@@ -110,12 +110,13 @@ button{
     font-weight: 600;
     line-height: 30px;
     font-size: 20px;
+    transition: all .4s ease-in-out;
 }
 button:hover{
-    background-color: rgba(67, 153, 200, 1);
+    background-color: rgba(255, 255, 255, 1);
     box-shadow: 2px 2px 25px 0px rgba(255, 255, 255, 0.1) inset;
     border-radius: 19px;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(67, 153, 200, 1);
 }
 .links{
     justify-content: center;
