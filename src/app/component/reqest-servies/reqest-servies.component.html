@@ -51,20 +51,28 @@
                 <div class="types">
                     <div class="row">
                         <div class="col-md-3">
-                            <img src="../../../assets/semi truck 2.png" alt="">
-                            <p>Commercial vans- Sprinter Category</p>
+                            <div class="content1" (click)="changecontent('Commercial vans- Sprinter Category')">
+                                <img src="../../../assets/semi truck 2.png" alt="">
+                                 <p>Commercial vans- Sprinter Category</p>
+                            </div>
                         </div>
                         <div class="col-md-3">
-                            <img src="../../../assets/semi truck 2.png" alt="">
-                            <p>5-Ton Truck Size</p>
+                           <div class="content2" (click)="changecontent('5-Ton Truck Size')">
+                                <img src="../../../assets/semi truck 2.png" alt="">
+                                <p>5-Ton Truck Size</p>
+                           </div>
                         </div>
                         <div class="col-md-3">
-                            <img src="../../../assets/semi truck 2.png" alt="">
-                            <p>Semi Truck Day Cab</p>
+                           <div class="content3" (click)="changecontent('Semi Truck Day Cab')">
+                                <img src="../../../assets/semi truck 2.png" alt="">
+                                <p>Semi Truck Day Cab</p>
+                           </div>
                         </div>
                         <div class="col-md-3">
-                            <img src="../../../assets/semi truck 2.png" alt="">
-                            <p>Semi Truck Sleeper</p>
+                            <div class="content4" (click)="changecontent('Semi Truck Sleeper')">
+                                <img src="../../../assets/semi truck 2.png" alt="">
+                                  <p>Semi Truck Sleeper</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -83,9 +91,9 @@
                                 <li>Wheel Rim Cleaner and Shine</li>
                                 
                             </ul>
-                            <div class="links d-flex gap-3">
-                                <a href="">BASIC <span> 45$</span></a>
-                            <a href="">ULTIMATE <span>55$</span></a>
+                            <div class="links d-flex gap-3" *ngIf="x">
+                                <a href="">BASIC <span > {{x}}</span></a>
+                            <a href="">ULTIMATE <span>{{y}}</span></a>
                             </div>
                          </div>
                         </div>
@@ -104,9 +112,9 @@
                             <li>Clean & Condition fabric/leather.</li>
                             
                         </ul>
-                        <div class="links d-flex gap-3">
-                            <a href="">BASIC <span> 150$</span></a>
-                        <a href="">ULTIMATE <span>200$</span></a>
+                        <div class="links d-flex gap-3" *ngIf="xx">
+                            <a href="">BASIC <span> {{xx}}</span></a>
+                        <a href="">ULTIMATE <span>{{yy}}</span></a>
                         </div>
                     </div>
                     
@@ -114,13 +122,11 @@
 
                         <div class="col-sm-12 col-md-5 col-lg-3">
 
-                        
-
                            <div class="card text-center">
                             <h6 class="text-center">COMBINE</h6>
-                            <div class="links d-flex gap-3">
-                                <a href="">BASIC <span> 45$</span></a>
-                            <a href="">ULTIMATE <span>55$</span></a>
+                            <div class="links d-flex gap-3" *ngIf="xxx">
+                                <a href="">BASIC <span>{{xxx}}</span></a>
+                            <a href="">ULTIMATE <span>{{yyy}}</span></a>
                             </div>
                            
                            </div>
