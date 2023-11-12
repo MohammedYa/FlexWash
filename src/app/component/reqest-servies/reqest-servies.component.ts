@@ -13,6 +13,11 @@ export class ReqestServiesComponent implements OnInit {
   }
   chosenTruckType = '';
 
+  colored1:boolean = false;
+  colored2:boolean = false;
+  colored3:boolean = false;
+  colored4:boolean = false;
+
   //select box for plans
   selectedPlan = '';
   selectedPlanType = '';
@@ -33,8 +38,18 @@ export class ReqestServiesComponent implements OnInit {
   y:any;
 changecontent(content:any) {
   this.chosenTruckType = '';
+  this.colored1 = false;
+  this.colored2 = false;
+  this.colored3 = false;
+  this.colored4 = false;
     if(content=='Commercial vans- Sprinter Category'){
+      this.colored1 = true;
+      this.colored2 = false;
+      this.colored3 = false;
+      this.colored4 = false;
+
       this.chosenTruckType = content;
+
       this.x='45$';
       this.y='55$';
       this.xx="150$";
@@ -42,6 +57,10 @@ changecontent(content:any) {
       this.xxx="170$";
       this.yyy="210$"; 
     }else if(content=='5-Ton Truck Size'){
+        this.colored1 = false;
+        this.colored2 = true;
+        this.colored3 = false;
+        this.colored4 = false;
       this.chosenTruckType = content;
       this.x='55$';
       this.y='65$';
@@ -51,6 +70,10 @@ changecontent(content:any) {
       this.yyy="160$"; 
     }
     else if(content=='Semi Truck Day Cab'){
+        this.colored1 = false;
+        this.colored2 = false;
+        this.colored3 = true;
+        this.colored4 = false;
       this.chosenTruckType = content;
       this.x=0;
       this.y=0;
@@ -60,6 +83,10 @@ changecontent(content:any) {
       this.yyy="215$"; 
     }
     else if(content=='Semi Truck Sleeper'){
+        this.colored1 = false;
+        this.colored2 = false;
+        this.colored3 = false;
+        this.colored4 = true;
       this.chosenTruckType = content;
       this.x="45$";
       this.y="55$";
@@ -68,9 +95,7 @@ changecontent(content:any) {
       this.xxx="180$";
       this.yyy="230$"; 
     }
-    console.log(content);
-    
-    
+  
   }
   requestForm!:FormGroup
   createForm():void{
@@ -88,6 +113,7 @@ changecontent(content:any) {
 
   submitForm() {
 
+    
     console.log('Form submitted with value:', this.selectedPlan);
     console.log('Form submitted with value:', this.selectedPlanType);
     //rahmamohammedhasan@gmail.com 
