@@ -101,10 +101,10 @@ changecontent(content:any) {
   requestForm!:FormGroup
   createForm():void{
     this.requestForm=this._FormBuilder.group({
-      first_name:['',Validators.required],
-      last_name:['',Validators.required],
-      address:['',Validators.required],
-      city:['',Validators.required],
+      first_name:['',Validators.required,Validators.maxLength(10),Validators.minLength(3)],
+      last_name:['',Validators.required,Validators.maxLength(10),Validators.minLength(3)],
+      address:['',Validators.required,Validators.maxLength(50),Validators.minLength(3)],
+      city:['',Validators.required,Validators.maxLength(30),Validators.minLength(3)],
       postalcode:['',Validators.required],
       province:['',Validators.required],
       contact_number:['',Validators.required],

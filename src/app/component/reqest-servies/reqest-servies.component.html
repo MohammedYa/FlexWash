@@ -10,12 +10,17 @@
                     <input formControlName="first_name" type="text" placeholder="First Name" 
                     class="form-control fName my-3 w-50">
                     <div *ngIf="requestForm.get('first_name')?.errors && requestForm.get('first_name')?.touched">
-                        <p *ngIf="requestForm.get('first_name')?.getError('required')" class="text-danger">Fitsr Name is required</p>
+                        <p *ngIf="requestForm.get('first_name')?.getError('required')" class="text-danger">First Name is required</p>
+                        <p *ngIf="requestForm.get('first_name')?.getError('maxLength')" class="text-danger">first Name Max Length is 10 </p>
+                        <p *ngIf="requestForm.get('first_name')?.getError('minLength')" class="text-danger">first Name min Length is 3 </p>
                     </div>
 
                     <input formControlName="last_name" type="text" placeholder="Last Name" class="form-control lName my-3 w-50">
                     <div *ngIf="requestForm.get('last_name')?.errors && requestForm.get('last_name')?.touched">
                         <p *ngIf="requestForm.get('last_name')?.getError('required')" class="text-danger">Last Name is required</p>
+                        <p *ngIf="requestForm.get('last_name')?.getError('maxlength')" class="text-danger">Last Name Max Length is 10 </p>
+                        <p *ngIf="requestForm.get('last_name')?.getError('minLength')" class="text-danger">Last Name min Length is 3 </p>
+                   
                     </div>
                 </div>
 
@@ -23,6 +28,9 @@
                     <input formControlName="address" type="text" name="" id="" placeholder="Address" class="form-control my-3">
                     <div *ngIf="requestForm.get('address')?.errors && requestForm.get('address')?.touched">
                         <p *ngIf="requestForm.get('address')?.getError('required')" class="text-danger">Address is required</p>
+                        <p *ngIf="requestForm.get('address')?.getError('maxlength')" class="text-danger">Address  Max Length is 50 </p>
+                        <p *ngIf="requestForm.get('address')?.getError('minLength')" class="text-danger">Address  min Length is 3 </p>
+                   
                     </div>
                 </div>
 
@@ -30,6 +38,9 @@
                     <input formControlName="city" type="text" name="" id="" placeholder="City"  class="form-control fName my-3">
                     <div *ngIf="requestForm.get('city')?.errors && requestForm.get('city')?.touched">
                         <p *ngIf="requestForm.get('city')?.getError('required')" class="text-danger">City Name is required</p>
+                        <p *ngIf="requestForm.get('city')?.getError('maxlength')" class="text-danger">City  Max Length is 50 </p>
+                        <p *ngIf="requestForm.get('city')?.getError('minLength')" class="text-danger">City  min Length is 3 </p>
+                   
                     </div>
                     <input formControlName="postalcode" type="number" name="" id="" placeholder="Postal Code"  class="form-control fName my-3">
                     <div *ngIf="requestForm.get('postalcode')?.errors && requestForm.get('postalcode')?.touched">
@@ -135,8 +146,12 @@
 
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="card text-center">
-                            <h6 class="text-center">COMBINE</h6>
+                            <h6 class="text-center">COMBINE</h6> 
+                              <ul>
+                                    <li>WASH & WAX && DETALING</li>
+                                </ul>
                             <div class="links d-flex gap-3" *ngIf="xxx">
+                             
                                 <a href="">BASIC <span>{{xxx}}</span></a>
                             <a href="">ULTIMATE <span>{{yyy}}</span></a>
                             </div>
