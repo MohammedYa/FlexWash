@@ -11,6 +11,20 @@ export class ReqestServiesComponent implements OnInit {
   ngOnInit():void{
     this.createForm()
   }
+  chosenTruckType = '';
+
+  //select box for plans
+  selectedPlan = '';
+  selectedPlanType = '';
+
+	onSelectedPlan(value:string): void {
+		this.selectedPlan = value;
+	}
+	onSelectedType(value:string): void {
+		this.selectedPlanType = value;
+	}
+
+  
   x:any;
   xx:any;
   xxx:any;
@@ -18,8 +32,9 @@ export class ReqestServiesComponent implements OnInit {
   yy:any;
   y:any;
 changecontent(content:any) {
+  this.chosenTruckType = '';
     if(content=='Commercial vans- Sprinter Category'){
-      console.log("gg");
+      this.chosenTruckType = content;
       this.x='45$';
       this.y='55$';
       this.xx="150$";
@@ -27,6 +42,7 @@ changecontent(content:any) {
       this.xxx="170$";
       this.yyy="210$"; 
     }else if(content=='5-Ton Truck Size'){
+      this.chosenTruckType = content;
       this.x='55$';
       this.y='65$';
       this.xx="100$";
@@ -35,6 +51,7 @@ changecontent(content:any) {
       this.yyy="160$"; 
     }
     else if(content=='Semi Truck Day Cab'){
+      this.chosenTruckType = content;
       this.x=0;
       this.y=0;
       this.xx="130$";
@@ -43,6 +60,7 @@ changecontent(content:any) {
       this.yyy="215$"; 
     }
     else if(content=='Semi Truck Sleeper'){
+      this.chosenTruckType = content;
       this.x="45$";
       this.y="55$";
       this.xx="150$";
@@ -50,6 +68,8 @@ changecontent(content:any) {
       this.xxx="180$";
       this.yyy="230$"; 
     }
+    console.log(content);
+    
     
   }
   requestForm!:FormGroup
@@ -66,7 +86,8 @@ changecontent(content:any) {
     })
   }
   request(data:FormGroup):void{
-    console.log(data.value)
+    console.log(data.value);
+    
 
   }
  
@@ -80,13 +101,18 @@ changecontent(content:any) {
       province:this.requestForm.get("province")?.value,
       contact_number:this.requestForm.get("contact_number")?.value,
       email:this.requestForm.get("email")?.value,
+      Choosen_plan:this.selectedPlan,
+      Plan_Type:this.selectedPlanType,
+      Truck_Type:this.chosenTruckType,
 
     })
     console.log(form);
-    
+    console.log('Form submitted with value:', this.selectedPlan);
+    console.log('Form submitted with value:', this.selectedPlanType);
+    //rahmamohammedhasan@gmail.com 
     // قم بجمع بيانات النموذج
     const formData =JSON.stringify({
-      to: "rahmamohammedhasan@gmail.com",
+      to: "emanamra1999@gmail.com",
       subject: "newjob",
       message:form,
   }) /* جمع بيانات النموذج هنا */;
