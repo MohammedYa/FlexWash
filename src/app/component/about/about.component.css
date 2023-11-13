@@ -1,6 +1,4 @@
-/* .myAbout{
-    min-height: fit-content;
-} */
+
 .svg{
     position: relative;
 }
@@ -90,7 +88,7 @@ line-height: 20px;
 letter-spacing: 1px;
 text-align: left;
 /* transform: translate(0%,25%); */
-/* margin-top: 11%; */
+margin-top: 11%;
 
 }
 video{

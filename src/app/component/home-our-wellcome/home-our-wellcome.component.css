@@ -2,8 +2,8 @@
 .lettleInfo{
     font-family: 'Poppins';
     font-weight: 500;
-    font-size: 16px ;
-    line-height: 24px; 
+    font-size: 19px ;
+    line-height: 30px; 
     width: 60%;
     text-align:left;
     letter-spacing: 1.5px;
@@ -73,7 +73,7 @@ video {
 
 .content {
     position: absolute;
-    top: 50%;
+    top: 63%;
     left: 50%;
     transform: translate(-79%, -80%);
     color: white;
@@ -96,7 +96,7 @@ h1{
     margin-top: 20px ;
     display: inline-block;
     font-family: Open Sans;
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 800;
     line-height: 49px;
     letter-spacing: 0em;
@@ -112,7 +112,7 @@ h1{
     letter-spacing: 0em;
     text-align: left;
 }
-.lettleInfo{
+/* .lettleInfo{
 margin: 20px 0px;
 font-family: Poppins;
 font-size: 16px;
@@ -121,7 +121,7 @@ line-height: 24px;
 letter-spacing: 0em;
 text-align: left;
 
-}   
+}    */
     /* font-family: Poppins;
     font-size: 36px;
     font-weight: 700;
@@ -167,7 +167,9 @@ section{
     right: 0;
 }
 @media screen and (min-width:992px) and (max-width:1200px) {
-
+.svg{
+    width: 65%;
+}
 }
 @media screen and (min-width:768px)and (max-width:992px) {
     .lettleInfo {

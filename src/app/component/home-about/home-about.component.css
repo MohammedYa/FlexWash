@@ -21,7 +21,7 @@ svg{
     padding: 60px;
     text-align: justify;
     position: relative;
-    top: -42%;
+    top: -40%;
     }
 .info p{
         font-family: Poppins;
@@ -178,41 +178,4 @@ svg{
             }
 
     }
-    /* @media screen and (min-width:200px)and (max-width:360px) {
-        .svg img{
-            width: 94%;
-        }
-        .group img{
-            width: 180px;
-        }
-        .mask-group2{
-            transform: translate(28%,-24%);
-        }
-        .svg h2{
-            
-            top: 104%;
-            left: 34%;
-            font-size: 20px;
-        }
-        .mask-group{
-            top: 49px;
-            left: 0%;
-        }
-        .info{
-            padding: 1px;
-            top: 11%;
-            font-size: 14px;
-            
-        }
-        .info p{
-            text-align: justify;
-        }
-        .btn{
-            margin-top: 2px; 
-            margin-bottom: 30px;
-            width: 100%;
-            font-weight: 500;
-            }
-
-    } */
 
