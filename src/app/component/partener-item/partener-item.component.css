@@ -19,9 +19,7 @@
     text-align: center;
     }
     .item{
-    /* width: 267px;
-    height: 267px; */
-    /* border-radius: 20px; */
+   
     overflow: hidden;
     background-color: #fff;
     border:1px solid rgba(67, 153, 200, 0.15);

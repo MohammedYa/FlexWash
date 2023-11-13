@@ -36,6 +36,9 @@ html {
 .my-slider-card img {
     border-radius: 3px;
 }
+ section{
+    height: 90vh !important;
+}
 @media screen and (min-width:750px) and (max-width:1048px){
     .my-slider-card{
         margin: auto !important;

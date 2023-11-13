@@ -15,7 +15,9 @@
     color: #fff;
 }
 
-
+section{
+    height: 90vh;
+}
 
 /* OWL */
 html {

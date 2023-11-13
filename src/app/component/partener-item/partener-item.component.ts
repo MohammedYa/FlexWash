@@ -12,40 +12,40 @@ export class PartenerItemComponent implements OnInit{
     {
       id:1,
       name:"Drive Xpress",
-      src:"../../../assets/photos/image 10.png",
+      src:"assets/image 10.png",
       imgs:[
-        "../../../assets/photos/image 13.png",
-        "../../../assets/photos/image 14.png",
-        "../../../assets/photos/image 15.png",
-        "../../../assets/photos/image 18.png",
-        "../../../assets/photos/image 16.png",
-        "../../../assets/photos/image 17.png",
+        "assets/image 13.png",
+        "assets/image 14.png",
+        "assets/image 15.png",
+        "assets/image 18.png",
+        "assets/image 16.png",
+        "assets/image 17.png",
       ]
     },
     {
       id:2,
       name:"BROAD REACH",
-      src:"../../../assets/photos/image 11.png",
+      src:"assets/image 11.png",
       imgs:[
-        "../../../assets/photos/image 13.png",
-        "../../../assets/photos/image 14.png",
-        "../../../assets/photos/image 15.png",
-        "../../../assets/photos/image 18.png",
-        "../../../assets/photos/image 16.png",
-        "../../../assets/photos/image 17.png",
+        "assets/image 13.png",
+        "assets/image 14.png",
+        "assets/image 15.png",
+        "assets/image 18.png",
+        "assets/image 16.png",
+        "assets/image 17.png",
       ]
     },
     {
       id:3,
       name:"FLEX EXPRESS COURIER",
-      src:"../../../assets/photos/image 12.png",
+      src:"assets/image 12.png",
       imgs:[
-        "../../../assets/photos/image 13.png",
-        "../../../assets/photos/image 14.png",
-        "../../../assets/photos/image 15.png",
-        "../../../assets/photos/image 18.png",
-        "../../../assets/photos/image 16.png",
-        "../../../assets/photos/image 17.png",
+        "assets/image 13.png",
+        "assets/image 14.png",
+        "assets/image 15.png",
+        "assets/image 18.png",
+        "assets/image 16.png",
+        "assets/image 17.png",
       ]
     }
   ]
