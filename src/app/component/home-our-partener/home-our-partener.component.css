@@ -81,6 +81,9 @@ html {
 
 
 @media screen and (min-width:750px) and (max-width:1048px){
+    .section{
+        padding-top: 100px;
+    }
     .my-slider-card{
         margin: 45px auto !important;
         width: 80% !important;
@@ -92,6 +95,7 @@ html {
     .partenerImg{
         margin: 65px auto;
     }
+    
     p{
         margin: auto;
         text-align: center;
@@ -107,7 +111,9 @@ html {
         margin: 65px auto;
     }
 
-
+    .section{
+        padding-top: 100px;
+    }
 }
 @media screen and (max-width:749px){
     .my-slider-card{
@@ -116,10 +122,10 @@ html {
         height: 80%;
     }
 
-
+    .section{
+        padding-top: 100px;
+    }
 }
-
-
 @media screen and (min-width:360px)and (max-width:500px) {
     p{
         font-size: 14px;
@@ -132,5 +138,8 @@ html {
     }
     .partenerImg{
         margin: 65px auto;
+    }
+    .section{
+        padding-top: 100px;
     }
 }
