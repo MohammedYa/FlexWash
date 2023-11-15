@@ -11,6 +11,11 @@ nav{
     justify-content: end;
     align-items: center;
 }
+.navbar-brand{
+    display: block;
+   width: 100px;
+   height: 100px; 
+}
 .nav-item{    
      width: 115px;
 
