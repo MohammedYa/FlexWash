@@ -63,7 +63,7 @@
                         <p *ngIf="requestForm.get('email')?.getError('required')" class="text-danger">Email is required</p>
                     </div>
                 </div>
-                <h5 class="">Choose Truck Type : {{chosenTruckType}}</h5>
+                <h5 class="">Choose Truck Type: {{chosenTruckType}}</h5>
                 <div class="types">
                     <div class="row">
                         <div class="col-md-3">
@@ -147,11 +147,11 @@
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="card text-center">
                             <h6 class="text-center">COMBINE</h6> 
-                              <ul>
-                                    <li>WASH & WAX && DETALING</li>
-                                </ul>
+                            <ul>
+                                <li>WASH & WAX && DETALING</li>
+                            </ul>
                             <div class="links d-flex gap-3" *ngIf="xxx">
-                             
+                            
                                 <a href="">BASIC <span>{{xxx}}</span></a>
                             <a href="">ULTIMATE <span>{{yyy}}</span></a>
                             </div>
@@ -176,6 +176,15 @@
                     </select>
                     
                 </div>
+                
+                <div class="extra">
+                    <p>Extra Service: </p>
+                    <div *ngFor="let servic of selectedServeces; let i = index">
+                        <input type="checkbox"   name="{{servic.label}}" (change)="onChange()" 
+                        [(ngModel)]="servic.isChecked" [ngModelOptions]="{standalone: true}" id="{{servic.id}}" >
+                        <label for="{{servic.id}}" class="form-check-label ms-2">{{servic.label}} </label>
+                    </div>
+                </div>
 
                 <div>
                     <textarea formControlName="note"  placeholder="Note..." rows="3" 
@@ -187,7 +196,7 @@
                     <button [disabled]="requestForm.invalid" type="submit" class="btn w-50 " >Send</button>
                 </div>
             </form>
-          
+
         </div>
     </div>
 </section>

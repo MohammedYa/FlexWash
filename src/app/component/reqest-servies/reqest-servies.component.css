@@ -23,12 +23,15 @@ h3{
 }
 ::placeholder{
     color: rgba(67, 153, 200, 1);
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 500;
     line-height: 30px;
 }
 select{
     color: #4399c8;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
 }
 option:not(:checked) { 
     color: #000; 
@@ -92,7 +95,7 @@ h6{
     font-weight: 500;
     line-height: 21.78px;
 }
- a{
+a{
     text-align: center;
     color:rgba(67, 153, 200, 1);
     font-weight: 600;
@@ -100,6 +103,20 @@ h6{
     text-decoration: none;
     
 }
+.extra{
+    background-color: #fff;
+    padding: 15px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+.extra p{
+    color: #4399c8;
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
  span{
     color: rgba(56, 78, 91, 1);
 }

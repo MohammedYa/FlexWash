@@ -11,8 +11,11 @@ import { ToastrService } from 'ngx-toastr';
 export class ReqestServiesComponent implements OnInit {
   constructor(private _FormBuilder:FormBuilder ,private _sb:EmailserveService,private toastr: ToastrService){}
   ngOnInit():void{
+    this.getXservice(),
     this.createForm()
+    
   }
+  
   chosenTruckType = '';
 
   colored1:boolean = false;
@@ -29,7 +32,25 @@ export class ReqestServiesComponent implements OnInit {
 		this.selectedPlanType = value;
 	}
 
-  // note:string = '';
+  selectedServeces:any[] = [];
+  xServices:string = '';
+
+  getXservice(){
+    this.selectedServeces = [
+      {id: 'X001',label: 'Hair Removal', isChecked: false},
+      {id: 'X002',label: 'Engine Shampoo & Dressing', isChecked: false},
+      {id: 'X003',label: 'Roof Cleaning', isChecked: false},
+      {id: 'X004',label: 'Aluminum Shine', isChecked: false},
+      {id: 'X004',label: 'Glass Polish', isChecked: false},
+      {id: 'X005',label: 'Electric Air Dryer', isChecked: false}
+    ];
+  }
+  onChange(){
+    console.log(this.selectedServeces);
+    
+  }
+
+  // ..
   
   x:any;
   xx:any;
@@ -98,6 +119,7 @@ changecontent(content:any) {
     }
   
   }
+
   requestForm!:FormGroup
   createForm():void{
     this.requestForm=this._FormBuilder.group({
@@ -109,38 +131,37 @@ changecontent(content:any) {
       province:['',Validators.required],
       contact_number:['',Validators.required],
       email:['',Validators.required, Validators.email],
-      note:[''],
+      note:['']
     })
   }
 
-  submitForm() {
 
-    
-    console.log('Form submitted with value:', this.selectedPlan);
-    console.log('Form submitted with value:', this.selectedPlanType);
+  submitForm() {    
+    this.xServices = this.selectedServeces.filter(x => x.isChecked == true).map(x => x.label).join(", ").toString();
     //rahmamohammedhasan@gmail.com 
     // قم بجمع بيانات النموذج
     const formData =JSON.stringify({
-      to: "rahmamohammedhasan@gmail.com",
+      to: "emanamra1999@gmail.com",
       subject: "New FLEX Wash Request",
-      message:"Name: "+this.requestForm.get("first_name")?.value+" "+this.requestForm.get("last_name")?.value
-              +"<br>"+"Email: "+this.requestForm.get("email")?.value+"<br>"+
-              "Contact_Number: "+this.requestForm.get("contact_number")?.value+"<br>"+
-              "Address: "+this.requestForm.get("address")?.value+"<br>"+
-              "city: "+this.requestForm.get("city")?.value+ "<br>"+
-              "Postalcode: "+this.requestForm.get("postalcode")?.value+"<br>"+
-              "Province: "+this.requestForm.get("province")?.value+"<br>"+
-              "Wahs_plan: "+this.selectedPlan+"<br>"+
-              "Plan_Type: "+this.selectedPlanType+"<br>"+
-              "Truck_Type: "+this.chosenTruckType+"<br>"+
-              "Note: "+this.requestForm.get("note")?.value+"<br>"
-
-  }) /* جمع بيانات النموذج هنا */;
-
-    // استخدم الخدمة لإرسال البيانات إلى الخادم
-    this._sb.sendFormData(formData).subscribe(
-      (res)=>{ this.toastr.info('The data has been successfully sent.', 'Thank you.');
-    this.requestForm.reset()}
-    )
+      message:"<strong>Name:</strong> "+this.requestForm.get("first_name")?.value+" "+
+              this.requestForm.get("last_name")?.value
+              +"<br>"+"<strong>Email:</strong> "+this.requestForm.get("email")?.value+"<br>"+
+              "<strong>Contact_Number:</strong> "+this.requestForm.get("contact_number")?.value+"<br>"+
+              "<strong>Address:</strong> "+this.requestForm.get("address")?.value+"<br>"+
+              "<strong>city:</strong> "+this.requestForm.get("city")?.value+ "<br>"+
+              "<strong>Postalcode:</strong> "+this.requestForm.get("postalcode")?.value+"<br>"+
+              "<strong>Province:</strong> "+this.requestForm.get("province")?.value+"<br>"+
+              "<strong>Wahs_plan:</strong> "+this.selectedPlan+"<br>"+
+              "<strong>Plan_Type:</strong> "+this.selectedPlanType+"<br>"+
+              "<strong>Truck_Type:</strong> "+this.chosenTruckType+"<br>"+
+              "<strong>Extra Services:</strong> "+this.xServices+"<br>"
+              +"<strong>Note:</strong> "+this.requestForm.get("note")?.value+"<br>"
+              
+}) ;
+      // استخدم الخدمة لإرسال البيانات إلى الخادم
+      this._sb.sendFormData(formData).subscribe(
+        (res)=>{ this.toastr.info('The data has been successfully sent.', 'Thank you.');
+      this.requestForm.reset()})
   }
+
 }
