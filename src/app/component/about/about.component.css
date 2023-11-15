@@ -145,11 +145,23 @@ padding-bottom: 150px;
     line-height: 24px;
     text-align: justify;
 }
+.content{
+    border: 1px solid rgba(67, 153, 200, 1);
+    border-radius: 23px;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    padding: 15px;
+}
 .col-md-6 span{
     color: #575757;
     font-size: 18px;
     line-height: 24px;
 
+}
+.first,.second,.third{
+    background-color: rgba(67, 153, 200, 0.2);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
 }
 @media screen and (min-width:992px) and (max-width:1200px) {
     /* .svg h2{
