@@ -64,7 +64,7 @@ export class ServiceDetailsComponent implements OnInit{
        "Electric Air Freshening",
       ]
     },
-    
+   
   ]
   service:any={}
   constructor(private _ActivatedRoute:ActivatedRoute){
