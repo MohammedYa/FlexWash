@@ -25,6 +25,7 @@ font-weight: 600;
 line-height: 30px;
 letter-spacing: 0em;
 text-align: center;
+text-decoration: none;
 
 transition: all .5s ease-in-out;
 }
