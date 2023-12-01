@@ -42,7 +42,12 @@ export class ReqestServiesComponent implements OnInit {
       {id: 'X003',label: 'Roof Cleaning', isChecked: false},
       {id: 'X004',label: 'Aluminum Shine', isChecked: false},
       {id: 'X004',label: 'Glass Polish', isChecked: false},
-      {id: 'X005',label: 'Electric Air Dryer', isChecked: false}
+      {id: 'X005',label: 'Electric Air Dryer', isChecked: false},
+      {id: 'X006',label: 'Walk Side', isChecked: false},
+      {id: 'X007',label: 'Heavy Machinery Wash', isChecked: false},
+      {id: 'X008',label: 'Boat and Mariene Scrubbing', isChecked: false},
+      {id: 'X009',label: 'Driveway preesure washing', isChecked: false},
+      {id: 'X010',label: 'Yard preesure Washing', isChecked: false},
     ];
   }
   onChange(){

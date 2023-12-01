@@ -7,5 +7,6 @@ import { Component ,ElementRef,ViewChild} from '@angular/core';
 })
 
 export class HomeOurWellcomeComponent {
+  isMuted: boolean = true;
 
 }
