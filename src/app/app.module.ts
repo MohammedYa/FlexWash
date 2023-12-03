@@ -12,7 +12,6 @@ import { FooterComponent } from './component/footer/footer.component';
 import { MyworkComponent } from './component/mywork/mywork.component';
 import { ServiceComponent } from './component/service/service.component';
 import { PartenershipComponent } from './component/partenership/partenership.component';
-import { PartenerItemComponent } from './component/partener-item/partener-item.component';
 import { ServiceDetailsComponent } from './component/service-details/service-details.component';
 import { ReqestServiesComponent } from './component/reqest-servies/reqest-servies.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -26,6 +25,9 @@ import { HomeServiceComponent } from './component/home-service/home-service.comp
 import {EmailserveService} from "../app/service/emailserve.service"
 import { HttpClientModule } from '@angular/common/http'; 
 import { ToastrModule } from 'ngx-toastr';
+import { PartenerOneComponent } from './component/partener-one/partener-one.component';
+import { PartenerTwoComponent } from './component/partener-two/partener-two.component';
+import { PartenerThreeComponent } from './component/partener-three/partener-three.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,14 +38,16 @@ import { ToastrModule } from 'ngx-toastr';
     MyworkComponent,
     ServiceComponent,
     PartenershipComponent,
-    PartenerItemComponent,
     ServiceDetailsComponent,
     ReqestServiesComponent,
     HomeOurWorkComponent,
     HomeAboutComponent,
     HomeOurPartenerComponent,
     HomeOurWellcomeComponent,
-    HomeServiceComponent
+    HomeServiceComponent,
+    PartenerOneComponent,
+    PartenerTwoComponent,
+    PartenerThreeComponent
   ],
   imports: [
     BrowserModule,
