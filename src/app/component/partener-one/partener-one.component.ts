@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
+
 @Component({
-  selector: 'app-mywork',
-  templateUrl: './mywork.component.html',
-  styleUrls: ['./mywork.component.css']
+  selector: 'app-partener-one',
+  templateUrl: './partener-one.component.html',
+  styleUrls: ['./partener-one.component.css']
 })
-export class MyworkComponent {
+export class PartenerOneComponent {
   customOptions: OwlOptions = {
     loop: true,
     center: true,
@@ -33,12 +34,4 @@ export class MyworkComponent {
     nav: true
   }
 
-  
-
-  slides: any[] = [
-    {workImg: '../../../assets/clener.png'},
-    {workImg: '../../../assets/clener.png'},
-    {workImg: '../../../assets/clener.png'},
-    
-  ]
 }
