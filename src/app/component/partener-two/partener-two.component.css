@@ -30,25 +30,10 @@
 .item img{
         height: 100%;
 }
-.item1 { grid-area: one; }
-.item2 { grid-area: two; }
-.item3 { grid-area: three; }
-.item4 { grid-area: four; }
-.item5 { grid-area: five; }
-.item6 { grid-area: six; }
-.grid-container {
-    min-height: fit-content;
-    height: 600px;
-    display: grid;
-    grid-template-areas:
-        'one two three '
-        'four five five  '
-        'six five five';
-    gap: 12px;
-    
-    padding: 10px;
+::ng-deep .owl-prev,
+::ng-deep .owl-next {
+  display: none !important;
 }
-
     @media screen and (min-width:992px) and (max-width:1200px) {
     .svg h2{
     top: 5%;

@@ -8,6 +8,7 @@ import { MyworkComponent } from './component/mywork/mywork.component';
 import { PartenerOneComponent } from './component/partener-one/partener-one.component';
 import { PartenerTwoComponent } from './component/partener-two/partener-two.component';
 import { PartenerThreeComponent } from './component/partener-three/partener-three.component';
+import { ServiceDetailsComponent } from './component/service-details/service-details.component';
 
 // Import the HttpClientModule
 
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path:"DriveXpress",component:PartenerOneComponent},
   {path:"BROADREACH",component:PartenerTwoComponent},
   {path:"FLEXEXPRESSCOURIER",component:PartenerThreeComponent},
+  {path:"serviceItem/:id",component:ServiceDetailsComponent},
   {path:"**",component:HomeComponent},
 ];
 

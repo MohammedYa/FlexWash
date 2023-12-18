@@ -131,3 +131,7 @@
         padding: 10px;
     }
     }
+::ng-deep .owl-prev,
+::ng-deep .owl-next {
+  display: none !important;
+}
