@@ -143,10 +143,9 @@ changecontent(content:any) {
 
   submitForm() {    
     this.xServices = this.selectedServeces.filter(x => x.isChecked == true).map(x => x.label).join(", ").toString();
-    //rahmamohammedhasan@gmail.com 
     // قم بجمع بيانات النموذج
     const formData =JSON.stringify({
-      to: "emanamra1999@gmail.com",
+      to: "Support@flexmobilewash.ca",
       subject: "New FLEX Wash Request",
       message:"<strong>Name:</strong> "+this.requestForm.get("first_name")?.value+" "+
               this.requestForm.get("last_name")?.value

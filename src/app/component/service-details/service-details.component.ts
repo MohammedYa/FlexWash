@@ -67,7 +67,7 @@ export class ServiceDetailsComponent implements OnInit{
    
   ]
   service:any={}
-  constructor(private _ActivatedRoute:ActivatedRoute){
+  constructor(_ActivatedRoute:ActivatedRoute){
     this.serviceId=_ActivatedRoute.snapshot.params['id']   
     this.getCompany(this.serviceId)
   }

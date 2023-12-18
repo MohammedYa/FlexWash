@@ -34,4 +34,11 @@ export class PartenerOneComponent {
     nav: true
   }
 
+  
+
+  slides: any[] = [
+    {workImg: 'assets/broadv2.MOV'}
+    
+    
+  ]
 }
