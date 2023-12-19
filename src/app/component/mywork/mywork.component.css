@@ -5,6 +5,7 @@
 }
 .svg h2{
     position: absolute;
+    
     top: 40%;
     left: 14%;
     font-family: Poppins;
@@ -18,7 +19,12 @@
 section{
     height: auto;
 }
-
+.work-hover{
+    transition: all 0.3s;
+}
+.work-hover:hover{
+    transform: scale(1.1);
+}
 /* OWL */
 html {
     scroll-behavior: smooth;
