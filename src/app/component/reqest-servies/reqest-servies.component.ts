@@ -37,17 +37,17 @@ export class ReqestServiesComponent implements OnInit {
 
   getXservice(){
     this.selectedServeces = [
-      {id: 'X001',label: 'Hair Removal', isChecked: false},
-      {id: 'X002',label: 'Engine Shampoo & Dressing', isChecked: false},
+      {id: 'X001',label: ' Hair Removal', isChecked: false},
+      {id: 'X002',label: 'Engine Shampoo& Dressing', isChecked: false},
       {id: 'X003',label: 'Roof Cleaning', isChecked: false},
       {id: 'X004',label: 'Aluminum Shine', isChecked: false},
       {id: 'X004',label: 'Glass Polish', isChecked: false},
       {id: 'X005',label: 'Electric Air Dryer', isChecked: false},
-      {id: 'X006',label: 'Walk Side', isChecked: false},
+      {id: 'X006',label: 'Walkside', isChecked: false},
       {id: 'X007',label: 'Heavy Machinery Wash', isChecked: false},
-      {id: 'X008',label: 'Boat and Mariene Scrubbing', isChecked: false},
+      {id: 'X008',label: 'Boat and Marine Scrubbing', isChecked: false},
       {id: 'X009',label: 'Driveway preesure washing', isChecked: false},
-      {id: 'X010',label: 'Yard preesure Washing', isChecked: false},
+      {id: 'X010',label: 'Yard Pressure Washing', isChecked: false},
     ];
   }
   onChange(){
